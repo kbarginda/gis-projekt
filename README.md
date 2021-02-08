@@ -15,11 +15,13 @@ BKA Daten nach:
     + Länder Fallentwicklung
 2. Kreise
     + Kreise Fallentwicklung
-3. Städte ab 100.000 EW  & Landeshauptstädte 
-    +Fallentwicklung 
 
-BKA Daten: .csv 
-ESRI: .csv & Shapefile 
+
+BKA Daten:
+
+
+Landkreisdaten:
+http://opendatalab.de/projects/geojson-utilities/#
 
 #----------------------------------------------------------------------#
 
@@ -30,9 +32,6 @@ Dieses Projekt wurde mit Jupyter Notebook (Python V 3.x, Jupyter Notebook V 6.x)
 - Shapely 
 - Geopandas
 - Pandas 
-- Ipyleaflet
-    Install via pip: pip install ipyleaflet
-    Enable via: jupyter nbextension enable --py --sys-prefix ipyleaflet
 
 #----------------------------------------------------------------------#
 Notizen (intern, löschen)
