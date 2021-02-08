@@ -1,12 +1,11 @@
 # gis-projekt
 
 Autor: Kayla Barginda 6066945 (kayla.barginda@hcu-hamburg.de) 
-HafenCity Universität | GIT - Kurs: GIS Programmierung 
+HafenCity Universität | M.sc. Geodäsie und Geoinformatik (GIT) | Kurs: GIS Programmierung 
 GitHub: kbanane (KB)
 
 #----------------------------------------------------------------------#
-
-Datenquellen: BKA (Kriminalitätsstatistik), ESRI (Basiskarte von Deutschland nach Länder aufgeteilt -> relevant: die Polygone der Bundesländer)
+#Datenquellen#
 
 Daten stammen aus dem Jahr 2018 
 
@@ -18,24 +17,39 @@ BKA Daten nach:
 
 
 BKA Daten:
-
+https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/PolizeilicheKriminalstatistik/PKS2018/pks2018_node.html
+	Quellenangabe:(PKS Bundeskriminalamt, 2018, PKS-Tabellen 2018: F-03-T01-Kreise)
+	Datei: BKA-LKS-F-03-T01-Kreise_csv.csv 
 
 Landkreisdaten:
 http://opendatalab.de/projects/geojson-utilities/#
+	|
+Bevölkerungsdaten:
+https://www.destatis.de
+
 
 #----------------------------------------------------------------------#
+#Packages#
 
 Dieses Projekt wurde mit Jupyter Notebook (Python V 3.x, Jupyter Notebook V 6.x) erstellt.
 
-(Notwendgie) Pakete: 
+(Notwendgie) Packages: 
 - Folium
 - Shapely 
 - Geopandas
 - Pandas 
 
 #----------------------------------------------------------------------#
-Notizen (intern, löschen)
+#Notizen (intern, löschen)#
 
-JOIN auf Bundesländer (?) -> Geometrien 
+ä,ö,ü,ß => deadly 
 
-Software: QGIS(? Plug-in?) + Python (Jupyter Notebook)
+Erledigt: 
+	- Choroplethenkarte (Grundlage, Feinheiten fehlen noch)
+	- % Krimi. pro Landkreis
+	
+To Do:
+	- Warscheinlichkeitsberechnung (Draw: Point, Folium)
+	- Radius (Bounding Box) via Widget (Folium?)
+	- Externe Widgets (ipywidgets)
+
