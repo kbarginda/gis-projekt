@@ -23,7 +23,7 @@ https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/PolizeilicheKr
 
 Landkreisdaten:
 http://opendatalab.de/projects/geojson-utilities/#
-	|
+
 Bevölkerungsdaten:
 https://www.destatis.de
 
@@ -33,11 +33,12 @@ https://www.destatis.de
 
 Dieses Projekt wurde mit Jupyter Notebook (Python V 3.x, Jupyter Notebook V 6.x) erstellt.
 
-(Notwendgie) Packages: 
+Notwendgie Packages: 
 - Folium
 - Shapely 
 - Geopandas
 - Pandas 
+- 
 
 #----------------------------------------------------------------------#
 #Notizen (intern, löschen)#
