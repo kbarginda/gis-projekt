@@ -28,6 +28,10 @@ https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/PolizeilicheKr
 Landkreisdaten:
 http://opendatalab.de/projects/geojson-utilities/#
 
+NUTS-Klassifikationsdaten: 
+(Eurostat)
+https://www.esf.de/portal/SharedDocs/PDFs/DE/FP%202014-2020/nuts-klassifikation.pdf?__blob=publicationFile&v=4
+
 Bevölkerungsdaten:
 https://www.destatis.de
 
@@ -35,14 +39,15 @@ https://www.destatis.de
 #----------------------------------------------------------------------#
 #Packages#
 
-Dieses Projekt wurde mit Jupyter Notebook (Python V 3.x, Jupyter Notebook V 6.x) erstellt.
+Dieses Projekt wurde mit Python V 3.x erstellt. UI wurde mit PyQt5 erstellt.
 
-Notwendgie Packages: 
+Notwendige Packages: 
 - Folium
 - Shapely 
 - Geopandas
 - Pandas 
-- 
+- PyQt5
+- Qt WebEngine 
 
 #----------------------------------------------------------------------#
 #Notizen (intern, löschen)#
@@ -52,9 +57,18 @@ Notwendgie Packages:
 Erledigt: 
 	- Choroplethenkarte (Grundlage, Feinheiten fehlen noch)
 	- % Krimi. pro Landkreis
+	- Tooltip popup 
+	- Interface mit Tabelle + Slider (muss noch programmiert werden)
+	- Punkt + auslesen des Wertes 
 	
 To Do:
-	- Warscheinlichkeitsberechnung (Draw: Point, Folium)
-	- Radius (Bounding Box) via Widget (Folium?)
-	- Externe Widgets (ipywidgets)
-
+	- Link slider to buffer around point 
+		-> slider controls the buffer's radius 
+	- Button "berechnen" calculates the Krimiwert
+		Algorithm: 
+			1. In which polygon is the point located?
+				- Take value from this polygon, calculate the distance the point is from the centre of the placed polygon
+			2. What polygons cross paths with the buffer? 
+				- calc the distance from the center of the overlapping polygon to the point
+			3. calc the weighted "Krimiwert" from this (Krimiwert is valid for entire polygon
+				
