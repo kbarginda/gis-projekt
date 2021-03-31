@@ -173,4 +173,21 @@
     }
     ,{"className": "foliumtooltip", "sticky": true});
                      
+    
+            var layer_control_2f70dbd06e2e4953b29a83c9ec13f821 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cd4752ee67974a63a532484bb2501929,
+                    "cartodbpositron" : tile_layer_32b51bbb35b640a5bb9dd6a7d20a78fa,
+                },
+                overlays :  {
+                    "LANDKREISE" : geo_json_ad14d1979d8f4fb287a4ba35cc654826,
+                },
+            };
+            L.control.layers(
+                layer_control_2f70dbd06e2e4953b29a83c9ec13f821.base_layers,
+                layer_control_2f70dbd06e2e4953b29a83c9ec13f821.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e2c9b47bd6384e0bb8ee42619f5f01d0);
+            tile_layer_32b51bbb35b640a5bb9dd6a7d20a78fa.remove();
+        
 </script>
