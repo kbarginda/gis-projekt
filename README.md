@@ -1,10 +1,4 @@
 # gis-projekt
-
-Autor: KB
-HafenCity Universität | M.sc. Geodäsie und Geoinformatik (GIT) | Kurs: GIS Programmierung 
-GitHub: kbanane (KB)
-
-#----------------------------------------------------------------------#
 #Datenquellen#
 
 Daten stammen aus dem Jahr 2018 
