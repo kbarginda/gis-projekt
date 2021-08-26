@@ -1,6 +1,6 @@
 # gis-projekt
 
-Autor: Kayla Barginda 6066945 (kayla.barginda@hcu-hamburg.de) 
+Autor: KB
 HafenCity Universität | M.sc. Geodäsie und Geoinformatik (GIT) | Kurs: GIS Programmierung 
 GitHub: kbanane (KB)
 
