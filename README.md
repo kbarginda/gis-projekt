@@ -31,6 +31,8 @@ https://www.destatis.de
 
 
 #----------------------------------------------------------------------#
+
+
 #Packages#
 
 Dieses Projekt wurde mit Python V 3.x erstellt. UI wurde mit PyQt5 erstellt.
@@ -42,4 +44,6 @@ Notwendige Packages:
 - Pandas 
 - PyQt5
 - Qt WebEngine 
-				
+
+
+<img width="594" alt="Bildschirmfoto 2021-08-26 um 10 20 50" src="https://user-images.githubusercontent.com/22305662/130948265-be254a2f-aa53-4ce8-bd62-08e3ed0fa31c.png">
